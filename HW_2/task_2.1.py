@@ -67,4 +67,5 @@ print(f'\nТочность модели на тестовых данных: {acc
 report_dict = classification_report(y_test, y_pred, output_dict=True)
 report_df = pd.DataFrame(report_dict).transpose()
 print('\nДетальный отчет о метриках:')
+
 print(report_df.round(2))

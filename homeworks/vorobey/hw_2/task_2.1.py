@@ -57,8 +57,8 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 # обучение лог-регресии
 model = LogisticRegression(max_iter=1000)
-model.fit(X_train, y_train)  # Вот тут происходит магия обучения!
-# насколько хорошо модель научилась предсказывать
+model.fit(X_train, y_train) 
+
 y_pred = model.predict(X_test)
 # точность
 accuracy = accuracy_score(y_test, y_pred)
